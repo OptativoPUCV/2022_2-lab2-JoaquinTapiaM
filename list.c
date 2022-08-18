@@ -34,8 +34,11 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  printf(list->current->data);
-  return NULL;
+  while(list->current != NULL){
+    list->current = list->current->prev;
+  }
+  list->head = list->current;
+  return list->head->data;
 }
 
 void * nextList(List * list) {

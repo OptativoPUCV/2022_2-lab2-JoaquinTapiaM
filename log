@@ -101,3 +101,8 @@ list.c:37:3: error: format not a string literal and no format arguments [-Werror
 cc1: all warnings being treated as errors
 Compilation failed
 4160261
+Thu 18 Aug 2022 06:37:56 PM UTC: 
+ list.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+ tests:  0|0
+4e7f81d
