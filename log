@@ -43,3 +43,13 @@ Thu 18 Aug 2022 05:00:22 PM UTC:
  tests:  1|5
 total_score: 10/70
 af84285
+Thu 18 Aug 2022 06:27:44 PM UTC: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:38:25: error: ‘List’ {aka ‘struct List’} has no member named ‘prev’
+   38 |     list->current = list->prev;
+      |                         ^~
+Compilation failed
+1390e85

@@ -34,7 +34,10 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  return NULL;
+  while(list->current->prev != NULL){
+    list->current = list->prev;
+  }
+  return list->current->data;
 }
 
 void * nextList(List * list) {
