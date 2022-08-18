@@ -34,10 +34,7 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  while(list->current->prev != NULL){
-    list->current = list->current->prev;
-  }
-  list->head = list->current;
+
   return list->head->data;
 }
 
