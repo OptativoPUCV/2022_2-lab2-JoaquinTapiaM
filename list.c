@@ -35,7 +35,7 @@ List * createList() {
 
 void * firstList(List * list) {
   while(list->current->prev != NULL){
-    list->current = list->prev;
+    list->current = list->current->prev;
   }
   return list->current->data;
 }
