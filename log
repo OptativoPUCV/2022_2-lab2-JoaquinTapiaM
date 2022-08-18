@@ -68,3 +68,15 @@ Thu 18 Aug 2022 06:30:44 PM UTC:
  1 file changed, 1 insertion(+), 4 deletions(-)
  tests:  0|0
 c5dd3c1
+Thu 18 Aug 2022 06:31:20 PM UTC: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:37:30: error: invalid operands to binary != (have ‘Node’ and ‘void *’)
+   37 |   while(*list->current->prev != NULL){
+      |         ~~~~~~~~~~~~~~~~~~~~ ^~
+      |         |
+      |         Node
+Compilation failed
+24b2113
