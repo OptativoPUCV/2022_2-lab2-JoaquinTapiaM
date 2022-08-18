@@ -29,26 +29,40 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-     return NULL;
+  List* lista = (list*)calloc(1,sizeof(List));
+  return lista;
 }
 
 void * firstList(List * list) {
-    return NULL;
+  while (list->current->prev != NULL){
+    list->current = list->current->prev; 
+  }
+  list->head = list->current;
+  return list->head->data;
 }
 
 void * nextList(List * list) {
-    return NULL;
+  list->current = list->current->next;
+  return list->current->data;
 }
 
 void * lastList(List * list) {
-    return NULL;
+  while (list->current->next != NULL){
+    list->current = list->current->next; 
+  }
+  list->tail = list->current;
+  return list->tail->data;
 }
 
 void * prevList(List * list) {
-    return NULL;
+  list->current = list->current->prev;
+  return list->current->data;
 }
 
 void pushFront(List * list, void * data) {
+  Node* nodo = createNode(data);
+  nodo->next = list->head;
+  list->head = nodo;
 }
 
 void pushBack(List * list, void * data) {
