@@ -106,3 +106,16 @@ Thu 18 Aug 2022 06:37:56 PM UTC:
  1 file changed, 5 insertions(+), 2 deletions(-)
  tests:  0|0
 4e7f81d
+Thu 18 Aug 2022 06:39:30 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:37:38: error: expected ‘;’ before ‘while’
+   37 |   list->current = list->current->prev
+      |                                      ^
+      |                                      ;
+   38 |   while(list->current != NULL){
+      |   ~~~~~                               
+Compilation failed
+7ed23e7
