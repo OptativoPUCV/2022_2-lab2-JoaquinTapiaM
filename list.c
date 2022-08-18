@@ -34,12 +34,11 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  list->current = list->current->prev;
-  while(list->current != NULL){
-    list->current = list->current->prev;
+  if (list->head !=NULL){
+    list->current = list->head;
+    return list->head->data;
   }
-  list->head = list->current;
-  return list->head->data;
+  return NULL;
 }
 
 void * nextList(List * list) {
