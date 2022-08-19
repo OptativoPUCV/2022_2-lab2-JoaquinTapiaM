@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -43,10 +44,14 @@ void * firstList(List * list) {
 
 void * nextList(List * list) {
   list->current = list->current->next;
-  return list->current;
+  return list->current->data;
 }
 
 void * lastList(List * list) {
+  if (list->tail !=NULL){
+    list->current = list->tail;
+    return list->tail->data;
+  }
   return NULL;
 }
 
