@@ -250,3 +250,19 @@ Fri 19 Aug 2022 10:39:09 PM UTC:
  tests:  9|3
 total_score: 35/70
 fcb0ce7
+Fri 19 Aug 2022 10:50:51 PM UTC: 
+ list.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:75:6: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   75 |   if(list->head = NULL){
+      |      ^~~~
+list.c:80:5: error: ‘newMode’ undeclared (first use in this function); did you mean ‘newNode’?
+   80 |     newMode->prev = NULL;
+      |     ^~~~~~~
+      |     newNode
+list.c:80:5: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+6254cf5
