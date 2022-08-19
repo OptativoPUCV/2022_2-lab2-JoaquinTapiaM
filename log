@@ -172,3 +172,13 @@ Fri 19 Aug 2022 10:27:08 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 fd503ae
+Fri 19 Aug 2022 10:27:52 PM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:38:17: error: ‘Node’ has no member named ‘current’
+   38 |   if (list->head->current != NULL)
+      |                 ^~
+Compilation failed
+72ec9df
