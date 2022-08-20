@@ -524,3 +524,9 @@ list.c:136:36: error: expected ‘;’ before ‘aux’
       |     ~~~                             
 Compilation failed
 7ac9bb5
+Sat 20 Aug 2022 03:54:53 AM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  11|1
+total_score: 55/70
+94664a9
