@@ -132,11 +132,9 @@ void * popCurrent(List * list){
     list->head = list->current;
   }
   else{
-  Node * aux = createNode(NULL);
-  aux = list->current->prev;
-    list->current->next->prev = list->current->prev;
-    aux->next = list->current->next;
     list->current = list->current->next;
+    list->current->prev = list->current->prev->prev;
+    list->current->prev->next = list->current
   }
     return datoEliminado;
 }
