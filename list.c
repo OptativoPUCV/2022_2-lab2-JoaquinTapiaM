@@ -136,9 +136,9 @@ void * popCurrent(List * list){
     aux->prev = list->current->prev;
     aux->next = list->current->next;
     aux->data = NULL;
-    list->current = list->current->next;
-    list->current->prev = aux->prev;
-    aux->next = list->current;
+    aux->next->prev = aux->prev;
+    aux->prev->next = aux->next;
+    list->current = aux->next;
   }
     return datoEliminado;
 }
