@@ -132,9 +132,13 @@ void * popCurrent(List * list){
     list->head = list->current;
   }
   else{
+    Node * aux = (Node*)malloc(1*sizeof(Node*));
+    aux->prev = list->current->prev
+    aux->next = list->current->next
+    aux->data = NULL;
     list->current = list->current->next;
-    list->current->prev = list->current->prev->prev;
-    list->current->prev->next = list->current;
+    list->current->prev = aux->prev;
+    aux->next = list->current;
   }
     return datoEliminado;
 }
