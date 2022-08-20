@@ -385,3 +385,17 @@ list.c:124:21: error: ‘head’ undeclared (first use in this function)
       |                     ^~~~
 Compilation failed
 4da6d37
+Sat 20 Aug 2022 03:01:01 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:121:21: error: ‘tail’ undeclared (first use in this function)
+  121 |   if(list->current==tail){
+      |                     ^~~~
+list.c:121:21: note: each undeclared identifier is reported only once for each function it appears in
+list.c:124:21: error: ‘head’ undeclared (first use in this function)
+  124 |   if(list->current==head){
+      |                     ^~~~
+Compilation failed
+d8e00be
