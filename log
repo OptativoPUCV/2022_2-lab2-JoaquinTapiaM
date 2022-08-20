@@ -304,3 +304,14 @@ list.c:75:6: error: suggest parentheses around assignment used as truth value [-
 cc1: all warnings being treated as errors
 Compilation failed
 de92081
+Sat 20 Aug 2022 01:36:09 AM UTC: 
+ list.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:76:6: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   76 |   if(list->head = NULL){
+      |      ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4dbd380
