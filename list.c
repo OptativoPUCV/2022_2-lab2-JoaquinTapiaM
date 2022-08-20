@@ -121,7 +121,7 @@ void * popCurrent(List * list) {
     return NULL;
   }
   void * datoEliminado = list->current->data;
-  elseif(list->current==list->tail){
+  if(list->current==list->tail){
     list->current = list->current->prev;
     list->current->next = NULL;
     list->tail = list->current;

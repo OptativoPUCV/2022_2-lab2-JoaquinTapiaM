@@ -441,3 +441,24 @@ list.c:140:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 280c54b
+Sat 20 Aug 2022 03:10:10 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:129:3: error: implicit declaration of function ‘elseif’ [-Werror=implicit-function-declaration]
+  129 |   elseif(list->current==list->head){
+      |   ^~~~~~
+list.c:129:36: error: expected ‘;’ before ‘{’ token
+  129 |   elseif(list->current==list->head){
+      |                                    ^
+      |                                    ;
+list.c:123:10: error: unused variable ‘datoEliminado’ [-Werror=unused-variable]
+  123 |   void * datoEliminado = list->current->data;
+      |          ^~~~~~~~~~~~~
+list.c:140:1: error: control reaches end of non-void function [-Werror=return-type]
+  140 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6bae790
