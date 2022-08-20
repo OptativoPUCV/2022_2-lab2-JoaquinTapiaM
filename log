@@ -546,3 +546,16 @@ Sat 20 Aug 2022 05:13:44 PM UTC:
  tests:  11|1
 total_score: 55/70
 b5fb36a
+Sat 20 Aug 2022 05:16:04 PM UTC: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:136:52: error: expected ‘;’ before ‘}’ token
+  136 |     list->current->next->prev = list->current->prev
+      |                                                    ^
+      |                                                    ;
+  137 |   }
+      |   ~                                                 
+Compilation failed
+3bd2071
