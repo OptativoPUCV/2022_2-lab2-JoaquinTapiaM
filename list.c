@@ -117,6 +117,18 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+  void * datoEliminado = list->current->dato;
+  if(list->current==tail){
+    
+  }
+  if(list->current==head){
+    list->current = list->current->next;
+    list->current->prev = NULL;
+    list->head = list->current;
+  }
+  else{
+    
+  }
     return NULL;
 }
 
