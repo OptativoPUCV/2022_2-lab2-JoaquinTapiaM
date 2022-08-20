@@ -367,3 +367,21 @@ list.c:120:10: error: unused variable ‘datoEliminado’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 ffea66e
+Sat 20 Aug 2022 03:00:49 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:120:41: error: ‘Node’ has no member named ‘dato’; did you mean ‘data’?
+  120 |   void * datoEliminado = list->current->dato;
+      |                                         ^~~~
+      |                                         data
+list.c:121:21: error: ‘tail’ undeclared (first use in this function)
+  121 |   if(list->current==tail){
+      |                     ^~~~
+list.c:121:21: note: each undeclared identifier is reported only once for each function it appears in
+list.c:124:21: error: ‘head’ undeclared (first use in this function)
+  124 |   if(list->current==head){
+      |                     ^~~~
+Compilation failed
+4da6d37

@@ -129,7 +129,7 @@ void * popCurrent(List * list) {
   else{
     
   }
-    return NULL;
+    return datoEliminado;
 }
 
 void cleanList(List * list) {
